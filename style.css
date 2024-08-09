@@ -1,0 +1,416 @@
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    z-index: 2;
+    background: #2a201c;
+}
+
+.header .logo h1 {
+    color: #fff;
+    font-size:3rem;
+}
+
+.header #blog{
+    display: none; 
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.header .navbar {
+    display: flex;
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: #d3ad7f;
+}
+
+.header #menu {
+    display: none; 
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.home, .about, .menu, .contact {
+    padding: 2rem 9%;
+    position: relative; 
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 80vh;
+    padding:1rem 5%;
+    align-items: center;
+    justify-content: center;
+    background: #2a201c;
+}
+
+.home .content {
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+
+.home .content .title {
+    font-size: 6rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.home .content .title span {
+    color: #d3ad7f;
+}
+
+.home .content .description {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.home .content .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: #d3ad7f;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.home .content .btn:hover {
+    letter-spacing: .2rem;
+}
+
+.home .image {
+    flex: 1 1 40rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home .image img {
+    width: 80%; 
+    max-width: 500px; 
+    height: auto; 
+    margin-left: auto;
+}
+
+.section {
+    padding-top: 10rem; 
+}
+
+
+.about, .menu, .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.about .content, .menu .content, .contact .content {
+    flex: 1 1 40rem;
+}
+
+.about .content h2, .menu .content h2, .contact .content h2 {
+    font-size: 3rem;
+}
+
+.about .content p, .menu .content p, .contact .content p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.menu {
+    padding: 2rem 9%;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    justify-content: center;
+}
+
+.menu-items .item {
+    flex: 1 1 23%;
+    text-align: center;
+    border: 2px solid #d3ad7f;
+    border-radius: 8px; 
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    transition: border-color 0.3s ease; 
+    max-width: 250px; 
+    box-sizing: border-box;
+}
+
+.menu-items .item:hover {
+    border-color: #c49e77; 
+}
+
+.menu-items .item img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-bottom: 2px solid #d3ad7f;
+    margin-bottom: 1rem;
+}
+
+.menu-items .item h3 {
+    font-size: 1.8rem; 
+    margin: 1rem 0 0.5rem;
+}
+
+.menu-items .item p {
+    font-size: 1.6rem; 
+    color: #2a201c; 
+}
+
+.menu-items .item p:nth-child(3) {
+    font-size: 1.6rem;
+    color: #2a201c;
+}
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #f9f9f9;
+}
+
+.contact .content {
+    flex: 1;
+    max-width: 50%; 
+    padding-right: 2rem;
+}
+
+.contact .content h2 {
+    font-size: 3rem; 
+    margin-bottom: 1rem;
+}
+
+.contact .content p {
+    font-size: 1.8rem; 
+    color: #333; 
+}
+.contact .image {
+    flex: 1;
+    max-width: 50%; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.contact .image img {
+    width: 100%;
+    height: auto; 
+    max-width: 500px; 
+}
+.about .content h2 {
+    margin-bottom: 2rem; 
+}
+
+.about .content p {
+    margin-top: 2rem; 
+}
+
+.menu .content h2 {
+    margin-bottom: 2rem;
+}
+
+.menu .content {
+    margin-top: 2rem; 
+}
+
+.contact .content h2 {
+    margin-bottom: 2rem; 
+}
+
+.contact .content p {
+    margin-top: 2rem; 
+}
+
+.header #close {
+    display: none; 
+}
+@media (max-width: 1200px) {
+    html {
+        font-size: 56.25%; 
+    }
+
+    .header {
+        padding: 1.5rem 7%;
+    }
+
+    .home, .about, .menu, .contact {
+        padding: 1.5rem 7%;
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 53.125%;
+    }
+    
+    .header {
+        padding: 1.5rem 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header #blog {
+        display: inline-block; 
+    }
+
+    .header .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 25rem;
+        background:#2a201c; 
+        backdrop-filter: blur(0px);
+        transition: 0.5s;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        z-index: 1200;
+    }
+
+    .header .navbar.active {
+        right: 0; 
+    }
+
+    .header .navbar #close {
+        display: block;
+    }
+
+    .header .navbar a {
+        display: block;
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .home .content {
+        padding-top: 8rem;
+    }
+
+    .home .content .title {
+        font-size: 4rem;
+    }
+
+    .home .content .description {
+        font-size: 1.6rem;
+    }
+
+    .home .image img {
+        width: 100%;
+        margin: auto;
+        object-position: center bottom;
+    }
+
+    .menu-items .item {
+        flex: 1 1 45%; 
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 46.875%;
+    }
+
+    .menu-items .item {
+        flex: 1 1 100%; 
+    }
+
+    .home .content .title {
+        font-size: 3rem;
+    }
+
+    .home .content .description {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 43.75%;
+    }
+    
+    .home .content .title {
+        font-size: 2.5rem;
+    }
+
+    .home .content .description {
+        font-size: 1.2rem;
+    }
+}
+
+.footer {
+    background: #2a201c;
+    color: #fff;
+    padding: 1rem 5%;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+}
+
+.footer-icons {
+    margin-top: 1rem;
+}
+
+.footer-icons a {
+    color: #d3ad7f;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.footer-icons a:hover {
+    color: #fff;
+}
